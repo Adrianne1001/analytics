@@ -1,0 +1,196 @@
+/* Filters Starts */
+
+#filtersContainer {
+	display: none;
+	flex-wrap: wrap;
+  }
+  
+  #toggleFiltersButton {
+	margin-bottom: 10px;
+	border: 1px solid var(--blue);
+	background-color: var(--blue);
+	padding: 5px 10px;
+	color: var(--light);
+	border-radius: 15px;
+  }
+  
+  .filter-box {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: space-between;
+	color: var(--dark);
+  }
+  
+  .input-wrapper {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10px;
+	margin-left: 10px;
+  }
+  
+  .filter {
+	width: 160px;
+	padding: 10px;
+	color: var(--dark);
+	border: 1px solid var(--dark);
+	background-color: var(--light);
+	border-radius: 5px;
+  }
+  
+  .filter.meatEstablishment {
+	width: 250px;
+  }
+  
+  .input-wrapper label {
+	margin-bottom: 5px;
+  }
+
+/* Filters Ends */
+
+
+/* First Layer STARTS */
+#content main .FirstLayer {
+	display: flex;
+	flex-wrap: wrap;
+	grid-gap: 24px;
+	margin-top: 24px;
+	width: 100%;
+	color: var(--dark);
+}
+#content main .FirstLayer > div {
+	border-radius: 20px;
+	background: var(--light);
+	padding: 24px;
+	overflow-x: auto;
+}
+#content main .FirstLayer .head {
+	display: flex;
+	align-items: center;
+	grid-gap: 16px;
+	margin-bottom: 24px;
+}
+#content main .FirstLayer .head h3 {
+	margin-right: auto;
+	font-size: 24px;
+	font-weight: 600;
+}
+#content main .FirstLayer .head .bx {
+	cursor: pointer;
+}
+
+/* menu color apex chart */
+.apexcharts-menu{
+	background-color: white !important;
+	color: black !important;
+	border: 1px solid var(--dark);
+	width: 100%;
+	}
+
+/* First Layer ENDS */
+
+
+
+
+
+/* Second Layer STARTS */
+#postmortem-chart{
+	display: flex; 
+	justify-content: center; 
+	align-items: center;
+}
+/* Area Charts STARTS*/
+#content main .charts {
+	display: flex;
+	flex-wrap: wrap;
+	grid-gap: 24px;
+	margin-top: 24px;
+	width: 100%;
+	color: var(--dark);
+}
+#content main .charts > div {
+	border-radius: 20px;
+	background: var(--light);
+	padding: 24px;
+	overflow-x: auto;
+}
+ #content main .head {
+	display: flex;
+	align-items: center;
+	grid-gap: 16px;
+	margin-bottom: 24px;
+}
+ #content main .head h3 {
+	margin-right: auto;
+	font-size: 24px;
+	font-weight: 600;
+}
+
+#content main .supply-chart, #content main .antemortem-chart{
+	flex-grow: 1;
+	flex-basis: 500px;
+	height: auto;
+}
+
+/* Area Charts ENDS*/
+
+/* doughnut Chart User feedbacks STARTS*/
+
+.chart-container{
+	display: flex;
+	align-items: center;
+	margin: 0 auto;
+	margin-top: -75px;
+	bottom: 0;
+	width: 500px;
+	color: var(--dark);
+	transition: all 400ms ease;
+	
+}
+
+.feedback-stats:hover {
+	transform: scale(1.02);
+	box-shadow: 0 4px 16px -7px rgba(0, 0, 0, 0.3);
+  }
+  .feedback-stats .details ul {
+	list-style: none;
+	padding: 0;
+  }
+
+  .feedback-stats .details ul li {
+	font-size: 16px;
+	margin: 12px 0;
+	text-transform: uppercase;
+  }
+  
+  .feedback-stats .details .percentage {
+	font-weight: 700;
+	color: var(--dark);
+  }
+  
+#content main .users-chart{
+	flex-grow: 1;
+	flex-basis: 300px;
+}
+  
+.unique-chart{
+	height: 100px;
+}
+/* doughnut Chart User feedbacks ENDS*/
+
+/* Second Layer ENDS */
+
+/* MAIN */
+
+
+@media screen and (max-width: 576px) {
+
+	#content main .box-info {
+		grid-template-columns: 1fr;
+	}
+
+	#content main .FirstLayer .head {
+		min-width: 420px;
+	}
+	
+}
